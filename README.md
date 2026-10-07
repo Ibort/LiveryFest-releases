@@ -1,8 +1,12 @@
-# MotoLivery — downloads
+# LiveryFest — downloads
 
-Two Windows programs for The Crew Motorfest. **MotoMaker** turns a picture into a design
-file. **MotoLivery** takes a design file and builds it in the game's livery editor for you,
-by driving the controller through a PS5 stream.
+LiveryFest turns a picture into a livery for The Crew Motorfest and builds it in the game's
+livery editor for you. One Windows program, `LiveryFest.exe`, opens its three parts:
+
+* the **Maker** turns a picture into a design;
+* the **Builder** builds a design in the game by driving the controller, on a PS5 through a
+  chiaki-ng stream or in the PC game;
+* the **Designer** lets you draw or correct a design by hand in your browser.
 
 This repository carries the downloads and nothing else. The source lives in a separate
 private repository.
@@ -10,12 +14,13 @@ private repository.
 ## Downloads
 
 1. Open the [Releases page](https://github.com/Ibort/liveryfest-releases/releases).
-2. On the newest release, download the `MotoLivery-<version>.zip` file listed under
+2. On the newest release, download the `LiveryFest-<version>.zip` file listed under
    **Assets**. It is about 70 MB.
 3. Unzip it to **Documents** or your **Desktop** — not to Program Files.
-4. Double-click `MotoLivery.exe` to build a design, or `MotoMaker.exe` to make one.
+4. Double-click `LiveryFest.exe`. It asks whether you want the Maker (make a design from a
+   picture), the Builder (build a design in the game) or the Designer (draw one by hand).
 
-You do not need a GitHub account, and nothing is installed: both programs run out of the
+You do not need a GitHub account, and nothing is installed: everything runs out of the
 folder you unzipped, and deleting the folder removes them completely.
 
 Windows only. Windows may say *"Windows protected your PC"* the first time — that is
@@ -24,16 +29,22 @@ then **Run anyway**.
 
 ## Updating
 
-Delete the old folder and unzip the new one. You do not have to set anything up again:
-your calibration, your settings and your designs live in `%LOCALAPPDATA%\MotoLivery` under
-your user folder, not in the app folder, precisely so an update cannot take them with it.
+Delete the old folder and unzip the new one. Unzipping over the old folder can leave old
+files behind, such as `LiveryFest-Maker.exe` from 0.9.5 and earlier. You do not have to
+calibrate again: your calibration, your settings and your designs live in
+`%LOCALAPPDATA%\LiveryFest` under your user folder, not in the app folder, precisely so an
+update cannot take them with it.
+
+If you build in the PC game, tell the Builder once more which game you drive: press
+**Set up…**, then **Choose** beside "Which game are you driving?", and pick the game's
+window. That one choice is kept in the app folder, so a new copy starts on the PS5.
 
 ## How you will know there is a new version
 
-Both programs check for themselves. When a window opens, and at most once every 24 hours,
-the app makes one request to GitHub asking for the newest release here. If that release's
-tag is a higher version number than the copy you are running, a green bar appears across
-the top of the window saying `Version 0.9.2 is out — you have 0.9.1`, with three buttons:
+The Maker and the Builder check for themselves. When either window opens, and at most
+once every 24 hours, the app makes one request to GitHub asking for the newest release here.
+If that release's tag is a higher version number than the copy you are running, a green bar
+appears across the top of the window saying `Version 0.10.0 is out — you have 0.9.5.`, with three buttons:
 
 * **what's new** opens that release's page in your browser.
 * **skip this version** never mentions that particular version again. The next one after
@@ -47,5 +58,5 @@ The check sends nothing but the request: no account, no sign-in, no telemetry. I
 cannot reach GitHub, or there is no newer release, it says nothing at all rather than
 interrupting you to report that it could not check.
 
-MotoMaker also has a **Check for updates** button, which just opens the Releases page in
-your browser.
+The Maker, and the Builder's Simple face, also have a **Check for updates** button, which
+just opens the Releases page in your browser.
