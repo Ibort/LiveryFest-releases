@@ -36,8 +36,10 @@ calibrate again: your calibration, your settings and your designs live in
 update cannot take them with it.
 
 If you build in the PC game, tell the Builder once more which game you drive: press
-**Set up…**, then **Choose** beside "Which game are you driving?", and pick the game's
-window. That one choice is kept in the app folder, so a new copy starts on the PS5.
+**Set up…**, then **Choose** beside "Which game are you driving?". Tick **Motorfest installed
+on this PC**, click the game's window in the list and press **Save**. Then close the Builder
+and open it again while the game is running, so it puts your window size back. That one
+choice is kept in the app folder, so a new copy starts on the PS5.
 
 ## How you will know there is a new version
 
